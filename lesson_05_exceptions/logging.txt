@@ -1,0 +1,7 @@
+ZeroDivisionError
+ZeroDivisionError - 2025-06-29 11:03:04.196225
+ZeroDivisionError - 2025-06-29 11:05:02.580191
+KeyboardInterrupt - 2025-06-29 11:05:37.517714
+ZeroDivisionError - 2025-06-29 11:05:39.148824
+KeyboardInterrupt - 2025-06-29 11:06:36.092169
+ZeroDivisionError - 2025-06-29 11:06:38.332980
