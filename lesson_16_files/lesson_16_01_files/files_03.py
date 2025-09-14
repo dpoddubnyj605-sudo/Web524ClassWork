@@ -1,6 +1,6 @@
 import os
 
-current_dir = r'.'
+current_dir = r'..'
 new_dir_01 = r'my_new_dir_01'
 new_dir_02 = r'my_new_dir_02'
 

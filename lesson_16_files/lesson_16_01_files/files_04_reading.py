@@ -21,7 +21,7 @@ def get_data_from_file(file_path):
 
 
 if __name__ == '__main__':
-    filepath = r'data_files\file_for_reading1.txt'
+    filepath = r'lesson_16_01_files/data_files\file_for_reading1.txt'
     data = ''
     try:
         data = get_data_from_file(filepath)

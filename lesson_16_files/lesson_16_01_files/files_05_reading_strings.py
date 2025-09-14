@@ -20,7 +20,7 @@ def get_data_from_file_rl(file_path: str) -> list[str]:
 
 
 if __name__ == '__main__':
-    filepath = r'data_files\file_for_reading.txt'
+    filepath = r'data_files/file_for_reading.txt'
     display_data_from_file(filepath)
     print()
 

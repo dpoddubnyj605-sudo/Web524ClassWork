@@ -29,7 +29,7 @@ import os
 #     print(f'dirnames >> {dirnames}')
 #     print(f'filenames >> {filenames}')
 
-base_dir = '.'
+base_dir = '..'
 data_dir = 'data_files'
 
 path_data_dir = os.path.join(base_dir, data_dir)
@@ -40,7 +40,7 @@ for path, dirnames, filenames in os.walk(path_data_dir):
     print(f'dirnames >> {dirnames}')
     print(f'filenames >> {filenames}')
 
-print(os.path.abspath('.'))
+print(os.path.abspath('..'))
 print(os.path.abspath('files_01.py'))
-print(os.path.abspath(r'.\data_files\example.txt'))
+print(os.path.abspath(r'data_files/example.txt'))
 print(f'Путь к текущему: {os.path.abspath(__file__)}')

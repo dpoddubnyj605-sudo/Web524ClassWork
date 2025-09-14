@@ -12,7 +12,14 @@ def get_data_dict_from_file(filename, divider):
 
 
 if __name__ == '__main__':
-    managers_data_dict = get_data_dict_from_file(r'data_files\managers_data_own_format.txt', ':')
+    managers_data_dict = get_data_dict_from_file(r'data_files/managers_data_own_format.txt', ':')
     print(managers_data_dict)
     for companies_, manager_ in managers_data_dict.items():
         print(f'{manager_} работает в компании {companies_[0]} которая принадлежит {companies_[1]}')
+
+
+
+
+
+
+

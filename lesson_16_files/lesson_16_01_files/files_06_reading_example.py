@@ -6,12 +6,12 @@ def guests_manager(file_path):
 
 
 if __name__ == '__main__':
-    file_path = r'data_files\guests.txt'
+    file_path = r'data_files/guests.txt'
     guest_count = 0
     guests = []
 
     try:
-        guest_count, guests = guests_manager(r'data_files\guests.txt')
+        guest_count, guests = guests_manager(r'data_files/guests.txt')
     except FileNotFoundError:
         print(f'Список гостей не найден в указанном месторасположении: {file_path}')
 
