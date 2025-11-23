@@ -2,9 +2,11 @@ import json
 
 
 class MarksModel:
+    # all_students = []
 
-    def __init__(self):
+    def __init__(self, user_email):
         self.__student_marks = []
+        # MarksModel.all_students.append({user_email: self.__student_marks})
 
     @property
     def student_marks(self):

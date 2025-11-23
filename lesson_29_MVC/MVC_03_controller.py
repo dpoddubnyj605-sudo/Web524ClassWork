@@ -17,7 +17,7 @@ class MarksController:
         self.model = model
 
     def get_default_action(self):
-        return 'Доброе пожаловать на главную страницу'
+        return 'Добро пожаловать на главную страницу'
 
     def get_marks_auth(self, user_role=GUEST, available_roles=(IS_SUPERUSER, IS_STAFF, USER_OWNER)):
         if user_role not in available_roles:
@@ -48,7 +48,7 @@ class MarksController:
         if user_role not in available_roles:
             return 'Forbidden!'
         marks = []
-        data = self.model.student_marks()
+        data = self.model.student_marks
         if data:
             for element in data:
                 marks.append(element['mark'])
@@ -59,8 +59,8 @@ class MarksController:
         available_roles = (MarksController.IS_SUPERUSER, MarksController.IS_STAFF, MarksController.USER_OWNER)
         user_check_result = check_access_role(user_role, available_roles)
         if user_check_result:
-            if self.model.student_marks():
-                return self.get_only_courses_list(), self.get_only_marks_list()
+            if self.model.student_marks:
+                return self.get_only_courses_list(), self.get_only_marks_list(user_role)
             return None
         return user_check_result
 
@@ -69,7 +69,7 @@ class MarksController:
         user_check_result = check_access_role(user_role, available_roles)
         if user_check_result:
             if isinstance(mark, int):
-                self.model.add_mark(mark)
+                self.model.add_mark(course, mark, filename)
                 return True
             return False
         return user_check_result
